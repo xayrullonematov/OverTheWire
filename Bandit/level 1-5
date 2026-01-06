@@ -1,46 +1,64 @@
------------------------------------------------------------
+====================================================
+LEVEL 0
+====================================================
+
 The goal of this level is for you to log into the game using SSH. The host to which you need to connect is bandit.labs.overthewire.org, on port 2220. The username is bandit0 and the password is bandit0. Once logged in, go to the Level 1 page to find out how to beat Level 1.  
 
-| ssh |
+Recommended command => | ssh |
 
-ssh user@ip(address) -p port(to connect particular port)
------------------------
+Solution: ssh user@ip(address) -p port(to connect particular port)
 
 b0: login: ssh bandit0@bandit.labs.overthewire.org -p 2220
     pass:  bandit0
 
-=> The password for the next level is stored in a file called readme located in the home directory. Use this password to log into bandit1 using SSH. Whenever you find a password for a level, use SSH (on port 2220) to log into that level and continue the game.
+====================================================
+LEVEL 1
+====================================================
 
-|ls, cd, cat, file, du, find|
+The password for the next level is stored in a file called readme located in the home directory. Use this password to log into bandit1 using SSH. Whenever you find a password for a level, use SSH (on port 2220) to log into that level and continue the game.
 
-just use 'cat readme' to see the pasword
-------------------------
+Recommended command => |ls, cd, cat, file, du, find|
+
+Solution: Just use 'cat readme' to see the pasword
 
 b1: login: ssh bandit1@bandit.labs.overthewire.org -p 2220
     pass:  ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 
-=> The password for the next level is stored in a file called - located in the home directory
+====================================================
+LEVEL 2 
+====================================================
 
-|ls, cd, cat, file, du, find|
+The password for the next level is stored in a file called - located in the home directory
 
-just a cheat: for files called '-' use 'rev - | rev', reversing a file content twice shows original one (cat doesnt work for these file names. 
+Recommended command => |ls, cd, cat, file, du, find|
 
-------------------------
+Solution: just a cheat: for files called '-' use 'rev - | rev', reversing a file content twice shows original one (cat doesnt work for these file names. 
 
 b2: login: ssh bandit2@bandit.labs.overthewire.org -p 2220
     pass:  263JGJPfgU6LtdEvgfWU1XP5yac29mFx
 
-=> The password for the next level is stored in a file called --spaces in this filename-- located in the home directory
+====================================================
+LEVEL 3
+====================================================
 
-|ls , cd , cat , file , du , find|    
+The password for the next level is stored in a file called ' --spaces in this filename-- ' located in the home directory
 
-common joke: it intentinally called --spaces in this filename-- , cuz terminal has logical problems with dashes and spaces, so use ' cat -- " --spaces in this filename--" '
-------------------------
+Recommended comman => |ls , cd , cat , file , du , find|    
+
+Solution: this is a common joke: it intentinally called --spaces in this filename-- , cuz terminal has logical problems with dashes and spaces, so use ' cat -- " --spaces in this filename--" '
 
 b3 : login: ssh bandit3@bandit.labs.overthewire.org -p 2220
      pass:  MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 
-------------------------
+====================================================
+LEVEL 4
+====================================================
+
+The password for the next level is stored in a hidden file in the inhere directory.
+
+Recommended commands: |ls , cd , cat , file , du , find|
+
+Solution:  
 
 b4 : login: ssh bandit4@bandit.labs.overthewire.org -p 2220
      pass:  2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
